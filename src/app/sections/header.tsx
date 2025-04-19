@@ -9,7 +9,6 @@ const logo = "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indig
 
 const navigation = [
     { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
     { name: 'Marketplace', href: '#' },
     { name: 'Company', href: '#' },
 ]
