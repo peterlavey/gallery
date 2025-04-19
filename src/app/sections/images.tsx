@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Item from "@/app/components/Item";
 
 const images = [
     {
@@ -38,16 +38,7 @@ const images = [
 export default function Images () {
     return (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {images.map((image) => (
-                <Image
-                    key={image.src}
-                    src={image.src}
-                    alt={image.alt}
-                    width={1000}
-                    height={1000}
-                    className="h-auto max-w-full rounded-lg"
-                />
-            ))}
+            {images.map((image) => <Item key={image.src} image={image} />)}
         </div>
     )
 }
